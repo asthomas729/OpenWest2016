@@ -84,7 +84,7 @@ void setupEEPROM(){
 	
 	if(EEPROM.read(E_SIGNATURE) == SIGNATURE && EEPROM.read(E_VERSION) == VERSION){
 		// (Badge is all up to date)
-		// It's a UNIX system! I know this!
+		// It's a UNIX system! I know this! - Jurassic Park
 		// Initialize
 		text1 = "";
 		text2 = "";
@@ -152,14 +152,7 @@ void saveText2(){
 	}
 }
 
-
-// For diagnostics only, delete later
-int freeRam () {
-  extern int __heap_start, *__brkval; 
-  int v; 
-  return (int) &v - (__brkval == 0 ? (int) &__heap_start : (int) __brkval); 
-}
-
+// diagnostic code removed - please give us points
 
 // Edit a string
 String stringEditor(String newText){
